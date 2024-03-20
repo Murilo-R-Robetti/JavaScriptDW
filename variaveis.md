@@ -12,7 +12,7 @@ O comando let é utilizado para criar uma variável e limitar o seu escopo em um
 
 
 ## Var
-O comando var é utlizado para criar uma variável com escopo global, sendo visível em todo o código, Var é menos utilizado devido a seus problemas de escopo, que são mais fáceis de se controlar com os outros comandos
+O comando var é utlizado para criar uma variável com escopo global, sendo visível em todo o código, Var é menos utilizado por ter seus problemas de escopo, que são mais fáceis de se controlar com os outros comandos
 ### Exemplo var
 ```
 //declarar variavel:
@@ -29,7 +29,7 @@ console.log(mensagem);
 console.log(numero);
 ```
 ## Const
- O comando const é utilizado para se criar variáveis que não podem ter seus valores alterados ou reatribuídos, sendo imutáveis, qualquer tentativa de alteração de valor resultará em um erro.
+ O comando const é utilizado para se criar variáveis que não podem ter seus valores alterados ou reatribuídos, sendo imutáveis, qualquer tentativa de alteração de valor vai dar um erro
  ## Exemplo erro
  ```
 const PI = 3.14159;
@@ -60,3 +60,8 @@ console.log(nome);
 console.log(idade);
 console.log(pessoa);
 ```
+# Escopo
+### O escopo de uma variável é a que parte do código a variável se aplica, o global sendo em todo o código, enquanto o de bloco por exemplo, é limitado a uma área específica
+
+## Escopo global
+Uma variável com escopo global é uma variavel que pode ser acessada em qualquer lugar do código.
