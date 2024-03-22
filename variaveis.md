@@ -37,7 +37,7 @@ PI = 3;
 ```
 ## EXEMPLOS
 ```
-//declarando
+//Declarando
 const nome = "Alice";
 const idade = 30;
 
@@ -47,10 +47,10 @@ const pessoa = {
     idade: 25
 };
 
-// Modificar um atributo da variável é permitido
+// É possível modificar um atributo da variável
 pessoa.idade = 26;
 
-//Tentativa de reatribuir (vai dar erro)
+//Tentando reatribuir (vai dar erro)
 pessoa = { nome: "Maria", idade: 35 };
 
 // Exibir os valores
@@ -65,3 +65,57 @@ console.log(pessoa);
 
 ## Escopo global
 Uma variável com escopo global é uma variavel que pode ser acessada em qualquer lugar do código.
+Um exemplo disso são variáveis do tipo var, que possuem escopo global podendo ser acessadas em qualquer ponto do código.
+## Exemplo
+``` 
+var mensagem = "DW 2";
+
+function funcao() {
+    console.log(mensagem);
+}
+
+funcao();
+
+console.log(mensagem);
+```
+A variável foi criada fora da função, mas pode ser acessada dentro ou fora dela.
+
+## Escopo de Bloco
+Uma variável com escopó de bloco é uma variável que pode ser isolada em um bloco, e não pode ser acessada de fora desse bloco, como por exemplo as variáveis de tipo let.
+
+## Exemplo
+```
+function funcao() {
+    let mensagem = "Hello world"; 
+
+    if (true) {
+        let mensagem = "Dw 2";
+        console.log(mensagem);
+    }
+    console.log(mensagem);
+}
+
+funcao();
+```
+Se a variável for acessada de dentro do if, irá dizer "Dw 2", mas se for acessada de fora do if, dirá "Hello world"
+
+## Escopo de Função
+Variáveis que foram criadas dentro de uma função são acessíveis somente dentro da função
+
+## Exemplo
+```
+function funcao() {
+    var mensagem = "DW 2";
+    console.log(mensagem); 
+}
+console.log(variavelLocal);
+```
+Se o console.log for utilizado dentro da função, mostrará a mensagem, mas se for usado fora da função, resultará em erro.
+
+# Tipos de dados
+
+## Tipos Primitivos
+Os tipos de dados primitivos são tipos de dados simples e imutáveis e existem vários tipo, como string, boolean, undefined, null e number.
+
+## Number
+
